@@ -11,6 +11,7 @@ html{
     height: 100%;
     margin: 0;
     background: linear-gradient(to bottom, #0e5f60, #3D898D, #72b4b8);
+    background-attachment: fixed;
 }
 
 /*Estilização para deixar os blocos desabilitados (invisiveis)*/
@@ -170,4 +171,5 @@ img{
     display: none;
     text-align: center;
     text-decoration: none;
+
 }
