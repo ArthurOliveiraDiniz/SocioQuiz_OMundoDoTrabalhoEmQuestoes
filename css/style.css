@@ -1,0 +1,173 @@
+/* ESTILIZAÇÕES GERAIS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    /*border: 1px solid black; Temporário */
+}
+
+html{
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom, #0e5f60, #3D898D, #72b4b8);
+}
+
+/*Estilização para deixar os blocos desabilitados (invisiveis)*/
+#alternativeBLock, #consequenceBlock, #scoreBlock{
+    display: none;
+}
+
+/* CONFIGURAÇÕES DA TELA INICIAL */
+.logo{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto 0;
+    margin-top: 70px;
+    padding: 30px;
+}
+
+.app h1{
+    font-weight: 25px;
+    font-size: 40px;
+    color:  #3d898d;
+    border-bottom: 1px solid  #3d898d;
+    padding-bottom: 30px;
+}
+
+h2{
+    color: #3d898d;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+
+/* ESTILIZAÇÃO DO BLOCO ALTERNATIVA */
+.quiz{
+    padding: 20px 0;
+}
+
+    /*Configuração dos Botões das Alternativas*/
+.btn {
+    background: #e2dddf;
+    color: #3d898d;
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid #3d898d;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #2f404d;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+.correct{
+    background: #45bb45;
+    color: #fff;
+}
+
+.incorrect{
+    background: #d72727;
+    color: #fff;
+}
+
+    /*Configurações da organização das alternativas e personagens embaixo do enunciado*/
+.corpoAlternativas {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+        /*Configuração da coluna dos personagens (principal e adversários)*/
+.personagem {
+    width: 20%; /*Configuração da coluna*/
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px; /*Mantem os itens em baixo*/
+    text-align: center; /*Configuração da legenda*/
+    font-weight: bold;
+}
+
+img{
+    width: 100%;
+}
+
+        /*Configuração dos botões de alternativas entre os personagens*/
+.alternativas {
+    width: 60%;
+    padding: 10px;
+}
+
+/* ESTILIZAÇÃO DO BLOCO CONSEQUÊNCIA */
+#consequenceBlock{
+    justify-content: center;
+    align-items: center;
+}
+.imagemConsequencia{
+    width: 35%;
+    margin-left: 32.5%; 
+}
+.mensagemPrincipal{
+    font-size: 25px;
+    text-align: center;
+}
+.nomeNivel{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+.textoConsequência{
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ESTILIZAÇÃO DO BLOCO PONTUAÇÃO */
+.pontuação{
+    font-size: 30px;
+    padding-top: 5px;
+    text-align: center;
+}
+.imagemFinal{
+    width: 35%;
+}
+
+/*CONFIGURAÇÃO DOS BOTÕES DE CONSEQUÊNCIA, SEGUIR E JOGAR NOVAMENTE*/
+#next-btn, #next, #start{
+    background: #3d898d;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    text-decoration: none;
+}

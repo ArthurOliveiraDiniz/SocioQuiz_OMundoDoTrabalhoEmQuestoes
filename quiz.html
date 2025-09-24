@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocioQuiz: O Mundo do Trabalho em Questões</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>SocioQuiz: O Mundo do Trabalho em Questões</h1>
+        <!-- Bloco das Alternativas -->
+        <div id="alternativeBlock" class="quiz">
+            <h2 id="question">Question Goes Here</h2>
+            <div class="corpoAlternativas">
+                <div class="personagem">
+                    <img src="" alt="personagem" id="level">
+                    <p id="levelName">Level Name Goes Here</p>
+                </div>
+                <div id="answer-buttons" class="alternativas">
+                    <button>Answers</button>
+                </div>
+                <div class="personagem">
+                    <img src="" alt="personagem" id="opponent">
+                    <p id="opponentName">Opponent Name Goes Here</p>
+                </div>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+
+        <!-- Bloco da Consequência da Resposta -->
+        <div id="consequenceBlock" class="consequencia">
+            <img src="" alt="personagem" id="consequenceImg" class="imagemConsequencia">
+            <h3 id="mainMessage" class="mensagemPrincipal">Main Message Goes Here</h3>
+            <h3 id="levelNow" class="nomeNivel">Level Goes Here</h3>
+            <p class="textoConsequência" id="consequenceText">Texto Da Consequência</p>
+            <button id="next">Sequir</button>
+        </div>
+
+        <!-- Bloco da Pontuação Final -->
+        <div id="scoreBlock" class="pontuação">
+            <h2 id="scoreText" class="pontuação">Score Goes Here</h2>
+            <img src="" alt="personagem" id="finalImg" class="imagemFinal">
+            <h3 id="finalLevel" class="nomeNivel">Level Goes Here</h3>
+            <p id="finalText" class="textoConsequência">Texto Da Consequência</p>
+            <a href="index.html" class="link"><button id="start">Start</button></a>
+        </div>
+
+    </div>
+    <!-- Funcionamento do Jogo -->
+    <script src="script.js"></script>
+</body>
+</html>
